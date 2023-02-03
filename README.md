@@ -1,9 +1,13 @@
 # Eureka server for Stork 
 
-The purpose of this project is to provide a container image for an application implementing [Eureka Server](https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-eureka-server.html), a Discovery Server containing the IP address and port on which microservices are running on.
+The purpose of this project is to provide a container image for an application implementin
+
 [Smallrye Stork Eureka service discovery](https://github.com/smallrye/smallrye-stork/tree/main/service-discovery/eureka) is using this image for testing purposes.
+
 The available container image is out of date (https://hub.docker.com/r/springcloud/eureka) and unusable.
-This project uses Spring Boot and is the result of following the steps described in [this article](https://dzone.com/articles/spring-cloud-amp-spring-bootimplementing-eureka-se). 
+
+This project uses Spring Boot and is the result of following the steps described in [this article](https://dzone.com/articles/spring-cloud-amp-spring-bootimplementing-eureka-se).
+
 
 ## Running the application locally
 
@@ -36,6 +40,6 @@ docker build -f src/main/docker/Dockerfile.jvm -t quay.io/$USER/eureka-server .
 Then you can run the container using:
 
 ```shell
-docker run -i --rm -p 8761:8761 quay.io/amunozhe/eureka-server
+docker run -i --rm -p 8761:8761 quay.io/$USER/eureka-server
 ```
 
