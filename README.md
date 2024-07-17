@@ -37,6 +37,8 @@ docker build -f src/main/docker/Dockerfile.jvm -t quay.io/$USER/eureka-server .
 ```
 **NOTE** Make sure you use your own user and use another registry if you want.
 
+**NOTE** Use the –platform linux/amd64 if you are building the image in a ARM architecure and you need to run it in amd.
+
 Then you can run the container using:
 
 ```shell
